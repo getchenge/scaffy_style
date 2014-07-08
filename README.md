@@ -1,4 +1,4 @@
-scaffy_stlye
+scaffy_style
 ============
 
 a compass scaffold
