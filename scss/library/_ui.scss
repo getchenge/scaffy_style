@@ -1,0 +1,76 @@
+@include webfont(icomoon,food);
+.icon,.bicon:before,.aicon:after{
+  font-family:'food';
+}
+.bicon:before,.aicon:after{
+  content:attr(data-content);
+}
+
+.line-list{
+  @include clearfix;
+  li{
+    float:left;
+  }
+}
+
+.p{
+  @include p;
+}
+
+body{
+  background-color:$firm;
+  background-attachment:fixed;
+//  @include unselectable;
+}
+
+.btn{
+  line-height:45px;
+  text-align:center;
+  @include unselectable;
+}
+
+.loading{
+  padding-left:3px;
+  &:before{
+    content:'\e600';
+    font-family:'food';
+    font-size:16px;
+    display:inline-block;
+    color:$bright;
+    @include animation(linear 2000ms spin infinite,ease 600ms color-shine1 infinite alternate);
+  }
+}
+@-webkit-keyframes color-shine1{
+  100%{
+    color:$word;
+  }
+}
+@-webkit-keyframes spin{
+  100%{
+    @include transform(rotateZ(360deg));
+  }
+}
+
+@-webkit-keyframes spin{
+  100%{
+    @include transform(rotateZ(360deg));
+  }
+}
+
+.error{
+  color:$orange;
+  &:before{
+    content:'\f057';
+    font-family:'food';
+  }
+}
+
+.success{
+  color:$firm;
+  padding-left:5px;
+  &:before{
+    content:'\f058';
+    font-family:'food';
+    font-size:20px;
+  }
+}

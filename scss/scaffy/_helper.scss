@@ -1,0 +1,141 @@
+@mixin a($acolor,$aline:none,$ahcolor:false,$ahline:none){
+  color:$acolor;
+  text-decoration:$aline;
+  &:hover{
+    @if $ahcolor{
+      color:$ahcolor;
+    }
+    text-decoration:$ahline;
+  }
+}
+
+@mixin bcenter($height,$width:'',$align:''){
+  height: $height;
+  line-height: $height;
+  @if $width!=''{
+    width:$width;
+  }
+  @if $align!=''{
+    text-align: $align;
+  }
+}
+@mixin center($height,$align:''){
+  height: $height;
+  line-height: $height;
+  @if $align!=''{
+    text-align: $align;
+  }
+}
+
+@mixin bflex($dir:''){
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  @if $dir!=''{
+    -webkit-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-orient:vertical;
+    box-orient: vertical;
+  }
+}
+@mixin cflex($i:0){
+  -webkit-box-flex:$i;
+  box-flex: 1;
+  -webkit-flex:$i;
+  flex:$i;
+}
+
+@mixin circle($r,$deg,$x:$r,$y:$r){
+  left:$x + $r*sin($deg);
+  top:$y - $r*cos($deg);
+}
+
+@mixin display($dispalys...){
+  @each $display in $dispalys{
+    .#{$display}{
+      display:$display;
+    }
+  }
+}
+
+@mixin fcenter($d:a){
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  @if $d==a or $d==v{
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+    align-items:center;
+  }
+  @if $d==a or $d==h{
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+  }
+}
+
+@mixin img-inset-shadow($radius:2px){
+  &:after{
+    content:'';
+    display:block;
+    width:100%;
+    height:100%;
+    box-shadow:inset 0 1px 3px rgba(#000,.15);
+    @include pos();
+    border-radius:$radius;
+  }
+  position:relative;
+  display:inline-block;
+}
+
+@mixin initColor($color,$classes){
+  @each $class in $classes{
+    .#{$class}{
+      color:nth($color,index($classes,$class));
+    }
+    .bg-#{$class}{
+      background-color:nth($color,index($classes,$class));
+    }
+  }
+}
+
+@mixin ioscroll($d:overflow-y){
+  #{$d}: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+@mixin p($indent:2em,$bottom:1.2em){
+  word-wrap: break-word;
+  -ms-word-wrap: break-word;
+  //text-align: justify;
+  text-justify: inter-ideograph;
+  hyphens: auto;
+  text-indent:$indent;
+  margin-bottom:$bottom;
+}
+
+@mixin pos($dir1:top,$x:0,$dir2:left,$y:0,$pos:absolute){
+  position:$pos;
+  #{$dir1}:$x;
+  #{$dir2}:$y;
+}
+
+@mixin row{
+  @include clearfix;
+  position:relative;
+  box-sizing:border-box;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@mixin tap-highlight($color:rgba(#fff,.0)){
+  -webkit-tap-highlight-color:$color;
+}
+
+@mixin webkit-cut($line:4){
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  display: -webkit-box;
+  overflow: hidden;
+}

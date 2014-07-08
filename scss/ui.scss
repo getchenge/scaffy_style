@@ -1,0 +1,29 @@
+@import "scaffy/config";
+@import "library/ui";
+@import "layouts/ui";
+
+a{
+  @include nocall;
+  @include notap;
+}
+
+html,body{
+  height:100%;
+}
+
+.content{
+//  position:absolute;
+  width:100%;
+//  top:50px;
+//  bottom:70px;
+  @include ioscroll;
+  ul{
+    list-style:disc inside;
+  }
+}
+.header{
+  border-bottom:1px solid #000;
+}
+.footer{
+  border-top:1px solid #000;
+}
