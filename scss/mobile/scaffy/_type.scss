@@ -68,8 +68,4 @@ a{
   @include text-overflow;
 }
 
-@each $display in block,inline,inline-block{
-  .#{$display}{
-    display:$display;
-  }
-}
+@include display(block,inline,inline-block);

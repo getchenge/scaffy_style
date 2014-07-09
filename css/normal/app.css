@@ -1,15 +1,13 @@
 /*
-Syntax error: File to import not found or unreadable: mod/form.
+Syntax error: File to import not found or unreadable: mod/btn.
               Load paths:
                 /Users/wow/myLib/scaffy_style/scss
                 /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets
                 Compass::SpriteImporter
-        on line 5 of /Users/wow/myLib/scaffy_style/scss/ui.scss
-
-1: /Users/wow/myLib/scaffy_style/scss/ui.scss
+        on line 7 of /Users/wow/myLib/scaffy_style/scss/normal/app.scss
 
 Backtrace:
-/Users/wow/myLib/scaffy_style/scss/ui.scss:5
+/Users/wow/myLib/scaffy_style/scss/normal/app.scss:7
 /Library/Ruby/Gems/1.8/gems/sass-3.2.18/lib/sass/../sass/tree/import_node.rb:67:in `import'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.18/lib/sass/../sass/tree/import_node.rb:28:in `imported_file'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.18/lib/sass/../sass/tree/import_node.rb:37:in `css_import?'
@@ -47,30 +45,7 @@ Backtrace:
 /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/watcher/compiler.rb:24:in `compile'
 (__FORWARDABLE__):3:in `__send__'
 (__FORWARDABLE__):3:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:103:in `sass_removed'
-/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:87:in `sass_callback'
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/forwardable.rb:148:in `to_proc'
-/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/watcher/watch.rb:17:in `call'
-/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/watcher/watch.rb:17:in `run_callback'
-/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:78:in `listen_callback'
-/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:77:in `each'
-/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:77:in `listen_callback'
-/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:76:in `each'
-/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:76:in `listen_callback'
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/forwardable.rb:148:in `to_proc'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/listener.rb:212:in `call'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/listener.rb:212:in `on_change'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/listener.rb:221:in `initialize_adapter'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `call'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `start'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `initialize'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `new'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `start'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/listener.rb:49:in `start'
-/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/watcher/project_watcher.rb:31:in `watch!'
-/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/commands/watch_project.rb:48:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/commands/watch_project.rb:47:in `perform'
 /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/commands/base.rb:18:in `execute'
 /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/commands/project_base.rb:19:in `execute'
 /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
@@ -84,4 +59,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: mod/form.\A               Load paths:\A                 /Users/wow/myLib/scaffy_style/scss\A                 /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 5 of /Users/wow/myLib/scaffy_style/scss/ui.scss\A \A 1: /Users/wow/myLib/scaffy_style/scss/ui.scss"; }
+  content: "Syntax error: File to import not found or unreadable: mod/btn.\A               Load paths:\A                 /Users/wow/myLib/scaffy_style/scss\A                 /Library/Ruby/Gems/1.8/gems/compass-0.13.alpha.4/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 7 of /Users/wow/myLib/scaffy_style/scss/normal/app.scss"; }

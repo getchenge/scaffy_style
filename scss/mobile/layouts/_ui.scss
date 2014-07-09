@@ -25,13 +25,3 @@ body{
   width:100%;
   @include row;
 }
-
-a{
-  @include notap;
-  @include nocall;
-  @include unselectable;
-  color:$link;
-  &:active{
-    color:$word;
-  }
-}

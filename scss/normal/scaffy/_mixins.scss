@@ -19,12 +19,22 @@
   hyphens: $mode;
 }
 
+@mixin ie-gradient($start_color:#ffffff,$end_color:#aaaaaa,$verticle:0){
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #{$start_color},endColorstr = #{$end_color},GradientType = #{$verticle});
+  ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #{$start_color},endColorstr = #{$end_color},GradientType = #{$verticle});
+}
+
 @mixin nocall{
   -webkit-touch-callout:none;
 }
 
 @mixin notap{
   @include tap-highlight;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity / 100;
+  filter: alpha(opacfity=$opacity);
 }
 
 @mixin sprite($x,$y,$img){
@@ -58,18 +68,6 @@
   pointer-events:none;
 }
 
-@mixin display($dispaly:block){
-  display:$dispaly;
-}
-
-//@mixin webfont($name:lianbo,$rename:$name){
-//  @font-face {
-//    font-family: '#{$rename}';
-//    src:  font-url("#{$name}.ttf") format('truetype');
-//    font-weight: normal;
-//    font-style: normal;
-//  }
-//}
 @mixin webfont($name:icon,$rename:$name){
   @font-face {
     font-family: '#{$rename}';
