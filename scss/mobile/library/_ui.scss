@@ -26,3 +26,10 @@ a{
     color:$word;
   }
 }
+
+.perspective{
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+  display: inline-block;
+}
